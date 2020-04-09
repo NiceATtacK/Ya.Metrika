@@ -6,7 +6,6 @@
 function setGoal(object){
     yaCounter49711711.reachGoal(object);
     console.log('PageView: 49711711 Params '+object); // Логируем срабатывание цели
-    return true;
 }
 
 /*
