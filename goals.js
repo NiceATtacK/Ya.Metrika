@@ -27,3 +27,32 @@ $( 'a[href="tel:+7(905)451-06-11"]' ).on( "click", function(event) {
     return true;
 });
 
+/*
+* Цель для кнопки почты в шапке сайта
+*/
+$( 'header a[href="mailto:shop@gw-market.ru"]' ).on( "click", function(event) {
+    setGoal('mail_1');
+    $( this ).off(event);
+    return true;
+});
+
+/*
+* Цель для кнопки «Оформить заказ» в шапке сайта
+*/
+$( 'form.cart-form a.uk-button' ).on( "click", function(event) {
+    setGoal('oformlenie_zakaza');
+    $( this ).off(event);
+    return true;
+});
+
+/*
+* Цель для формы при взаимодействии
+*/
+$( '#js-order-form button.wa-button' ).on( "click", function(event) {
+    setGoal('vzaimiod_form_zakaz');
+    $( this ).off(event);
+    return true;
+});
+
+
+
